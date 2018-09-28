@@ -9,15 +9,18 @@ package tetris;
  *
  * @author mcv26
  */
-public abstract class Figura {
-    private Color color;
+public class PiezaT extends Figura {
     
-    public Figura(Color color){
-        this.color = color;
+    public PiezaT(){
+        super(null);
+    }
+    
+    public PiezaT(Color color){
+        super(color);
     }
     
     @Override
     public String toString(){
-        return "Figura{ Color "+color+"}";
+        return "Pieza T"+super.toString()+"\n";
     }
 }
