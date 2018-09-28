@@ -3,21 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tetris;
+package combos;
 
 /**
  *
  * @author mcv26
  */
-public abstract class Figura {
-    private Color color;
-    
-    public Figura(Color color){
-        this.color = color;
+public class HamburguesaVegana implements IHamburguesa{
+    public HamburguesaVegana(){
+        
     }
     
     @Override
-    public String toString(){
-        return " {Color "+color+"}";
+    public void crearHamburguesa(){
+        System.out.println("Aquí crea una hamburguesa saludable");
     }
 }

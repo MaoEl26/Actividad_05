@@ -3,21 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tetris;
+package problema2.builder;
 
 /**
  *
- * @author mcv26
+ * @author andre
  */
-public abstract class Figura {
-    private Color color;
+public class ContraposicionBuilder extends GUIBuilder{
     
-    public Figura(Color color){
-        this.color = color;
+    public ContraposicionBuilder() {
+        super();
     }
-    
+
     @Override
-    public String toString(){
-        return " {Color "+color+"}";
+    public void defineGUIColors() {
+        unaGUI.setColors("negro");
     }
+    
 }

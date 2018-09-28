@@ -9,6 +9,13 @@ package combos;
  *
  * @author mcv26
  */
-public class Hamburguesa {
+public class HamburguesaGrasosa implements IHamburguesa{
+    public HamburguesaGrasosa(){
+        
+    }
     
+    @Override
+    public void crearHamburguesa(){
+        System.out.println("Aquí crea una hamburguesa tapa arterias");
+    }
 }

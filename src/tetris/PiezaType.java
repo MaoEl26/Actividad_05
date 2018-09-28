@@ -9,15 +9,6 @@ package tetris;
  *
  * @author mcv26
  */
-public abstract class Figura {
-    private Color color;
-    
-    public Figura(Color color){
-        this.color = color;
-    }
-    
-    @Override
-    public String toString(){
-        return " {Color "+color+"}";
-    }
+public enum PiezaType {
+    PiezaLDerecha,PiezaLIzquierda, PiezaRectangulo,PiezaT,PiezaSIzquierda,PiezaSDerecha;
 }
